@@ -1,14 +1,14 @@
 //=============================================================================
-// Viz_DisableMouse.js [MZ] (v1.0.0)
+// Viz_DisableMouse.js [MZ] (v1.0.1)
 //=============================================================================
 
 /*:
  * @target MZ
- * @plugindesc [MZ] (v1.0.0) Deshabilita el control con mouse y táctil.
+ * @plugindesc [MZ] (v1.0.1) Deshabilita el control con mouse y táctil.
  * @author Vizcacha
- * @version 1.0.0
+ * @version 1.0.1
  * @url https://github.com/Cri-ParraC/Viz_DisableMouse
- * @help Viz_DisableMouse.js [MZ] (v1.0.0)
+ * @help Viz_DisableMouse.js [MZ] (v1.0.1)
  * ----------------------------------------------------------------------------
  * Plugin sencillo para RPG Maker MZ que deshabilita el control con mouse y
  * táctil.
@@ -18,9 +18,7 @@
 
 (() => {
   "use strict";
-  console.info("Viz_DisableMouse.js [MZ] (v1.0.0) activado");
-
-  TouchInput._setupEventHandlers = function () { };
+  console.info("Viz_DisableMouse.js [MZ] (v1.0.1) activado");
 
   let timeout;
 
@@ -43,4 +41,13 @@
   document.addEventListener('touchstart', resetTimer);
 
   resetTimer();
+
+  //-----------------------------------------------------------------------------
+  // TouchInput
+  //-----------------------------------------------------------------------------
+
+  // TouchInput._setupEventHandlers
+
+  TouchInput._setupEventHandlers = function () { };
+
 })();
