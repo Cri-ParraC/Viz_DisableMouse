@@ -1,4 +1,4 @@
-# Viz_DisableMouse.js [MZ] (v1.0.1)
+# Viz_DisableMouse.js [MZ] (v1.0.2)
 
 Plugin sencillo para RPG Maker MZ que deshabilita el control con mouse y táctil.
 
